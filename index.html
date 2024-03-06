@@ -9,6 +9,7 @@
 <style>
     body{
         background-image: url(images/bg_img.png);
+        overflow: hidden;
     }
     h1{
         color: transparent;
@@ -25,6 +26,13 @@
         width: 70px;
         height: 70px;
         
+    }
+    .ice_guy{
+        opacity: 0.5;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        right: -90px;
     }
     .Ice-image img{
         width: 400px;
@@ -49,32 +57,81 @@
     .back{
         position: absolute;
         top: -650px;
-        right: -800px;
+        right: 90px;
         height: 350px;
         width: 400px;
     }
     .container{
         position: relative;
-        width: 600px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
         
     }
     .container .text{
         position: absolute;
-        right: -600px;
-        top: -620px;
+        right: 350px;
+        top: -550px;
         font-family: 'Custom';
         font-size: 4rem;
         color: #ab636c;
     }
     .container .subtext{
         position: absolute;
-        right: -600px;
-        top: -360px;
+        right: 230px;
+        top: -290px;
         font-family: 'Custom';
         font-size: 3.1rem;
         color:transparent; 
         -webkit-text-stroke: 2px #ab636c;
+    }
+    .container .btn{
+        background-color: rgba(48, 77, 52, 0.333);
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        text-align: center;
+        font-size: 18pt;
+        display: inline;
+        font-family: 'Custom';
+        border: 2px solid white;
+        border-radius: 50%;
+        border-color: white;
+        height: 60px;
+        letter-spacing: 1px;
+        position: absolute;
+        right: 200px;
+        top: -160px;
+    }
+    .container .green{
+        position: absolute;
+        left: 360px;
+        top: -350px;
+        filter: drop-shadow(10px 20px 20px rgb(77, 76, 76))
+    }
+    .container .blue{
+        position: absolute;
+        left: 60px;
+        top: -360px; 
+        filter: drop-shadow(10px 20px 20px rgb(77, 76, 76))
+    }
+    .container a{
+        color: transparent;
+        text-decoration: none;
+        -webkit-text-stroke: 1px white;
+    }
+    .insta{
+        color: #ab636c;
+       
+    }
+    .twitter{
+        color: #ab636c;
+        
+    }
+    .icons{
+        font-size: 50px;
+        float: right;
+        margin-right: 30px;
+        position: relative;
+        bottom: 35px
     }
 
 
@@ -84,19 +141,35 @@
         <img class='image' src="images/logo2.png" alt="">
         <h1 style="font-family: Custom; padding-top: -100px;">Swirl Bliss</h1>
     </header>
-
+    <div class="ice_guy">
+        <img style="height: 250px; width: 200px;" src="images/ice_guy.PNG" alt="">
+    </div>
     <div class="Ice-image">
-       
         <img src="images/icecream.png" alt="">
     </div>
 
     <div class="container">
         <img style="width: 600px; height:600px;" src="images/pink_brush.png" alt="" class="back">
+        <img style="width: 300px; height: 450px;" src="images/GREEN_ICE.PNG" alt="" class="green" >
+        <img style="width: 300px; height: 450px;" src="images/BLUE-ICE.PNG" alt="" class="blue">
         <p class="text">Indulge in<br>Swirls of<br>Bliss!</p> 
         <p class="subtext">Head to our website !</p>
-        
+        <button class="btn"><a href="shop.html">Shop Now</a></button>
+    </div>
+
+    <div class="icons">
+        <a class="insta" href="https://instagram.com" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon></a>
+        <a class="twitter" href="https://twitter.com" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+    
+
     </div>
     
-   
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
 </body>
 </html>
