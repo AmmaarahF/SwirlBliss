@@ -131,9 +131,35 @@
         float: right;
         margin-right: 30px;
         position: relative;
-        bottom: 35px
+        bottom: 45px
     }
+@media only screen and (max-width: 769px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container img{
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
+    .icon{
+        width: 100%;
+    }
+    .ice_guy{
+        display: hidden;
+    }
+}
+    @media only screen and (max-width: 769px)  {
+    header{
+        width: 100%;
+}
+body{
+    flex-direction: column;
+}
+    } 
 
+   
 
 </style>
 <body>
@@ -154,7 +180,7 @@
         <img style="width: 300px; height: 450px;" src="images/BLUE-ICE.PNG" alt="" class="blue">
         <p class="text">Indulge in<br>Swirls of<br>Bliss!</p> 
         <p class="subtext">Head to our website !</p>
-        <button class="btn"><a href="shop.html">Shop Now</a></button>
+        <button class="btn"><a href="signup.html">Shop Now</a></button>
     </div>
 
     <div class="icons">

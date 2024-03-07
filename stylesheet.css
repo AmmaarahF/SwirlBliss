@@ -2,3 +2,7 @@
     font-family: 'Custom';
     src: url('fonts/Custom.ttf');
 }
+@font-face{
+    font-family: 'Custom2';
+    src: url('fonts/Catboo.ttf')
+}
